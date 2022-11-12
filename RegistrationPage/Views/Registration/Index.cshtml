@@ -1,0 +1,14 @@
+﻿@model User
+<form asp-action="Index" asp-controller="Registration" method="post">
+    <input type="text" asp-for="Username" placeholder="Username" />
+    <span asp-validation-for=Username></span>
+
+    <br />
+    <input type="password" asp-for="Password" placeholder="Password" />
+    <span asp-validation-for=Password></span>
+    <br />
+    <input type="text" asp-for="Email" placeholder="Email" />
+    <span asp-validation-for=Email></span>
+    <br />
+    <input  type="submit"/>
+</form>
